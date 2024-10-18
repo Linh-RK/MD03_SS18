@@ -21,7 +21,6 @@ public class BookServiceImpl implements BookService {
     public List<Book> findAll() {
         return bookDAO.findAll();
     }
-
     @Override
     public Boolean create(BookDTO book) {
         String image = "";
@@ -30,7 +29,6 @@ public class BookServiceImpl implements BookService {
             System.out.println(image);
         }
 //        upload file
-        
 //        convert
         Book bookEntity = new Book();
         bookEntity.setName(book.getName());

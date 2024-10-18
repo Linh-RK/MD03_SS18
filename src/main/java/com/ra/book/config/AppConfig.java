@@ -108,4 +108,6 @@ public class AppConfig implements WebMvcConfigurer, ApplicationContextAware {
         registry.addInterceptor(new InterceptorsAdmin()).addPathPatterns("/admin/**");
 //        registry.addInterceptor().addPathPatterns("/user/**")
     }
+//    cấu hình đa ngôn ngữ
+
 }

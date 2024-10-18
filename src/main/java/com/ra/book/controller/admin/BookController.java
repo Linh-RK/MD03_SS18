@@ -161,6 +161,7 @@ int totalPages;
                           @PathVariable int id,
                           Model model) {
         if(result.hasErrors()) {
+
             List<Category> categories = categoryService.findAll();
             model.addAttribute("bookDTO", bookDTO);
             model.addAttribute("categories", categories);
